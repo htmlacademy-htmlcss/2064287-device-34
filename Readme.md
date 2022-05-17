@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Margarita Yakubovskaya](https://up.htmlacademy.ru/htmlcss/34/user/2064287).
-* Наставник: `Неизвестно`.
+* Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/tatien).
 
 ---
 

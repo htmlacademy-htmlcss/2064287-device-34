@@ -5,8 +5,129 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+<header class="main-page">
+  <h1 class="visually-hidden">Интернет-магазин Device</h1>
+  <img class="logo" src="" alt="Логотип сайта Девайс">
+  <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+  <input class="header-search" type="text" name="search" placeholder="Текст поиска">
+  <button class="search-button" type="submit" value="Найти">Найти</button>
+  </form>
+<nav class="navigation">
+  <ul class="navigation-list navigation-user" >
+    <li class="navigation-item">
+      <a class="navigation-link" href="#">Войти</a>
+    </li>
+    <li class="navigation-item">
+      <a class="navigation-link" href="#">Сравнить</a>
+    </li>
+    <li class="navigation-item">
+      <a class="navigation-link" href="#">Корзина</a>
+    </li>
+  </ul>
+  <ul class="navigation-list">
+    <li class="navigation-item">
+      <a class="navigation-link" href="#">Доставка</a>
+    </li>
+    <li class="navigation-item">
+      <a class="navigation-link" href="#">Гарантия</a>
+    </li>
+    <li class="navigation-item">
+      <a class="navigation-link" href="#">Контакты</a>
+    </li>
+  </ul>
+</nav>
+  <label class="product-catalog">Каталог товаров
+  <button class="product-catalog-button" type="button"></button>
+</label>
+</header>
+<main class="main-index">
+  <section class="popular-product-slider">
+    <h2 class="popular-product-title visually-hidden">Популярные товары</h2>
+    <button class="slider-button slider-prev" type="button">
+      <span class="visually-hidden">Предыдущий товар</span>
+    </button>
+    <a class="product-link" href="#">
+      <img class="product-image" src="" alt="Квадрокоптер">
+    </a>
+    <button class="slider-button slider-next" type="button">
+      <span class="visually-hidden">Следующий товар</span>
+    </button>
+    <p class="product-slogan">Порхает как бабочка, жалит как пчела!</p>
+    <p class="product-discription">Этот обычный, на первый взгляд,
+      квадрокоптер оснащен мощным лазером, замаскированным под
+      стандартную камеру.</p>
+      <a class="product-link" href="#">Подробнее</a>
+      <button class="slider-pagination-button current-button">
+        <span class="visually-hidden">Первый товар</span>
+      </button>
+      <button class="slider-pagination-button">
+        <span class="visually-hidden">Второй товар</span>
+      </button>
+      <button class="slider-pagination-button">
+        <span class="visually-hidden">Третий товар</span>
+      </button>
+      <p class="product-discription"><b>800 м</b><br>Дальность полета</p>
+      <p class="product-discription"><b>50 м</b><br>Радиус поражения</p>
+  </section>
+  <section class="menu-index">
+    <h2 class="visualy-hidden">Каталог товаров</h2>
+    <ul class="menu-list">
+      <li class="menu-item">
+        <a class="menu-link-image" href="#">
+        <img class="menu-image" src="#" alt="Раздел Виртуальная реальность">
+        </a>
+        <a class="menu-link" href="#">Виртуальная реальность</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link-image" href="catalog.html">
+        <img class="menu-image" src="#" alt="Раздел Моноподы для селфи">
+        </a>
+        <a class="menu-link" href="catalog.html">Моноподы для селфи</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link-image" href="#">
+        <img class="menu-image" src="#" alt="Раздел Экшн-камеры">
+        </a>
+        <a class="menu-link" href="#">Экшн-камеры</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link-image" href="#">
+        <img class="menu-image" src="#" alt="Раздел Фитнес-браслеты">
+        </a>
+        <a class="menu-link" href="#">Фитнес-браслеты</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link-image" href="#">
+       <img class="menu-image" src="#" alt="Раздел Умные часы">
+       <a class="menu-link" href="#">Умные часы</a>
+       </a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link-image" href="#">
+        <img class="menu-image" src="#" alt="Раздел Квадрокоптеры">
+        <a class="menu-link" href="#">Квадрокоптеры</a>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section class="advantages">
+    <h2 class="visually-hidden">Преимущества</h2>
+    <label class="delivery">Доставка
+      <input class="delivery-button" type="radio"  checked>
+      <p class="delivery-title">Доставка</p>
+      <p class="delivery-content">Мы с удовольствием доставим ваш товар прямо
+        к вашему подъезду совершенно бесплатно! Ведь
+        мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        <img class="delivery-image" src="" alt="Почтальон с посылкой">
+    </label>
+    <label class="guarantee">Гарантия
+      <input class="guarantee-button" type="radio">
+    </label>
+    <label class="credit">Кредит
+      <input class="credit-button" type="radio">
+    </label>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
-  </body>
+  </section>
+</main>
+</body>
 </html>

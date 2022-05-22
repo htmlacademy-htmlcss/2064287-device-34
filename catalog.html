@@ -9,7 +9,7 @@
 <body>
   <header class="main-page">
     <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
-    <a class="logo-main=link" href="index.html">
+    <a class="logo-main-link" href="index.html">
       <img class="logo" src="" alt="Логотип сайта Девайс">
     </a>
     <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
@@ -74,31 +74,31 @@
           <ul class="filter-color-list">
             <li class="filter-color-item">
               <label class="filter-color-label">
-                <input class="filter-color-button" type="checkbox" value="black" checked>
+                <input class="filter-color-checkbox" type="checkbox" name="black" value="black" checked>
                 Черный
               </label>
             </li>
             <li class="filter-color-item">
               <label class="filter-color-label">
-                <input class="filter-color-button" type="checkbox" value="white" checked>
+                <input class="filter-color-checkbox" type="checkbox" name="white" value="white" checked>
                 Белый
               </label>
             </li>
             <li class="filter-color-item">
               <label class="filter-color-label">
-                <input class="filter-color-button" type="checkbox" value="blue">
+                <input class="filter-color-checkbox" type="checkbox" name="blue" value="blue">
                 Синий
               </label>
             </li>
             <li class="filter-color-item">
               <label class="filter-color-label">
-                <input class="filter-color-button" type="checkbox" value="red">
+                <input class="filter-color-checkbox" type="checkbox" name="red" value="red">
                 Красный
               </label>
             </li>
             <li class="filter-color-item">
               <label class="filter-color-label">
-                <input class="filter-color-button" type="checkbox" value="pink">
+                <input class="filter-color-checkbox" type="checkbox" name="pink" value="pink">
                 Розовый
               </label>
             </li>
@@ -121,8 +121,8 @@
             </li>
           </ul>
         </fieldset>
+        <button class="product-filter-button" type="submit">Показать</button>
       </form>
-      <a class="product-filter-link" href="#">Показать</a>
       <label class="title sorting-title">Сортировка:
         <select class="sorting">
           <option value="popular">Популярные</option>
@@ -166,41 +166,41 @@
           <p class="product-card-price">1 500 ₽</p>
         </li>
       </ul>
-      <button class="load-more-button" type="button">Загрузить ещЁ</button>
+      <button class="load-more-button" type="button">Загрузить ещё</button>
       <ul class="pagination-list">
         <li class="pagination-item">
           <a class="pagination-link" href="#">
-            <span class="visually-hidden">Назад</span>
+            <span class="pagination-name">Назад</span>
           </a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link pagination-current" href="#">
-            <span class="visually-hidden">1</span>
+            <span class="pagination-name">1</span>
           </a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">
-            <span class="visually-hidden">2</span>
+            <span class="pagination-name">2</span>
           </a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">
-            <span class="visually-hidden">3</span>
+            <span class="pagination-name">3</span>
           </a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link">
-            <span class="visually-hidden">...</span>
+            <span class="pagination-name">...</span>
           </a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">
-            <span class="visually-hidden">15</span>
+            <span class="pagination-name">15</span>
           </a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">
-            <span class="visually-hidden">Вперёд</span>
+            <span class="pagination-name">Вперёд</span>
           </a>
         </li>
       </ul>

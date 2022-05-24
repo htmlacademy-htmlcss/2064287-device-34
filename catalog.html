@@ -17,18 +17,18 @@
       <button class="search-button" type="submit" value="Найти">Найти</button>
     </form>
     <nav class="navigation">
-      <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Коля Петухов</a>
+      <ul class="navigation-user">
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">Коля Петухов</a>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Выйти</a>
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">Выйти</a>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Сравнить</a>
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">Сравнить</a>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Корзина</a>
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">Корзина</a>
         </li>
       </ul>
       <ul class="navigation-list">
@@ -65,57 +65,57 @@
     <section class="product-block">
       <h2 class="title product-filter">фильтр:</h2>
       <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="price">
+        <fieldset class="range">
           <legend class="filter-price">Стоимость</legend>
         </fieldset>
 
-        <fieldset class="color">
-          <legend class="filter-color">Цвет</legend>
-          <ul class="filter-color-list">
-            <li class="filter-color-item">
-              <label class="filter-color-label">
-                <input class="filter-color-checkbox" type="checkbox" name="black" value="black" checked>
+        <fieldset class="checkbox">
+          <legend class="filter-checkbox">Цвет</legend>
+          <ul class="filter-checkbox-list">
+            <li class="filter-checkbox-item">
+              <label class="filter-checkbox-label">
+                <input class="filter-checkbox-button" type="checkbox" name="black" value="black" checked>
                 Черный
               </label>
             </li>
-            <li class="filter-color-item">
-              <label class="filter-color-label">
-                <input class="filter-color-checkbox" type="checkbox" name="white" value="white" checked>
+            <li class="filter-checkbox-item">
+              <label class="filter-checkbox-label">
+                <input class="filter-checkbox-button" type="checkbox" name="white" value="white" checked>
                 Белый
               </label>
             </li>
-            <li class="filter-color-item">
-              <label class="filter-color-label">
-                <input class="filter-color-checkbox" type="checkbox" name="blue" value="blue">
+            <li class="filter-checkbox-item">
+              <label class="filter-checkbox-label">
+                <input class="filter-checkbox-button" type="checkbox" name="blue" value="blue">
                 Синий
               </label>
             </li>
-            <li class="filter-color-item">
-              <label class="filter-color-label">
-                <input class="filter-color-checkbox" type="checkbox" name="red" value="red">
+            <li class="filter-checkbox-item">
+              <label class="filter-checkbox-label">
+                <input class="filter-checkbox-button" type="checkbox" name="red" value="red">
                 Красный
               </label>
             </li>
-            <li class="filter-color-item">
-              <label class="filter-color-label">
-                <input class="filter-color-checkbox" type="checkbox" name="pink" value="pink">
+            <li class="filter-checkbox-item">
+              <label class="filter-checkbox-label">
+                <input class="filter-checkbox-button" type="checkbox" name="pink" value="pink">
                 Розовый
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="bleutooth">
-          <legend class="bluetooth-title">Bluetooth</legend>
-          <ul class="filter-bluetooth-list">
-            <li class="filter-bluetooth-item">
-              <label class="filter-bluetooth-label">
-                <input class="filter-bluetooth-button" type="radio" name="filter-bluetooth" value="yes" checked>
+        <fieldset class="radiobutton">
+          <legend class="filter-radiobutton">Bluetooth</legend>
+          <ul class="filter-radiobutton-list">
+            <li class="filter-radiobutton-item">
+              <label class="filter-radiobutton-label">
+                <input class="filter-radiobutton-button" type="radio" name="filter-radiobutton" value="yes" checked>
                 Есть
               </label>
             </li>
-            <li class="filter-bluetooth-item">
-              <label class="filter-bluetooth-label">
-                <input class="filter-bluetooth-button" type="radio" name="filter-bluetooth" value="no" checked>
+            <li class="filter-radiobutton-item">
+              <label class="filter-radiobutton-label">
+                <input class="filter-radiobutton-button" type="radio" name="filter-radiobutton" value="no">
                 Нет
               </label>
             </li>
@@ -123,13 +123,12 @@
         </fieldset>
         <button class="product-filter-button" type="submit">Показать</button>
       </form>
-      <label class="title sorting-title">Сортировка:
-        <select class="sorting">
-          <option value="popular">Популярные</option>
-          <option value="popular">Дешевые</option>
-          <option value="popular">Дорогие</option>
-        </select>
-      </label>
+      <p class="title sorting-title">Сортировка:</p>
+      <select class="sorting">
+        <option value="popular">Популярные</option>
+        <option value="popular">Дешевые</option>
+        <option value="popular">Дорогие</option>
+      </select>
       <a class="sorting-link" href="#">
         <span class="visually-hidden">В конец списка</span>
       </a>

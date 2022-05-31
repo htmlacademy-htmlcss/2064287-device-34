@@ -123,3 +123,14 @@ input[type='text']::placeholder {
   font-size:16px;
   color:#444444;
 }
+
+.category-list{
+  line-height:24px;
+  letter-spacing: -0.35px;
+}
+
+.category-link{
+  color: #000000;
+  text-decoration:none;
+  background-color:#FFE17F;
+}

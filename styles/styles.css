@@ -1,0 +1,136 @@
+@font-face{
+  font-family: "Raleway";
+  src:url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style:normal;
+  font-display:swap;
+}
+
+@font-face{
+  font-family: "Rubik";
+  src:url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "Rubik";
+  src:url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* .visually-hidden{
+  visibility:hidden;
+} */
+
+body{
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 30px;
+  color:#000000;
+  background-color: #ffffff;
+ }
+
+.main-page{
+  background-color:#FFE17F;
+  color: #000000;
+}
+
+.search-button{
+  font-family:"Rubik", sans-serif;
+  font-weight:400;
+  font-size:16px;
+  line-height:20px;
+}
+
+input[type='text']::placeholder {
+  font-family: "Rubik", sans-serif;
+  font-weight:400;
+  font-size:16px;
+  line-height:20px;
+}
+
+.navigation-user{
+  font-family:"Rubik", sans-serif;
+  font-weight:400;
+}
+
+.navigation-user-link{
+  color:#000000;
+  text-decoration:none;
+}
+
+.navigation-list{
+  font-family:"Raleway", sans-serif;
+  font-weight:800;
+  letter-spacing:3.5px;
+  text-transform: uppercase;
+}
+
+.navigation-link{
+  color:#000000;
+  line-height:21.13px;
+  text-decoration:none;
+}
+
+.product-catalog {
+  font-family:"Raleway", sans-serif;
+  font-weight:800;
+  line-height:21.13px;
+  color:#000000;
+  letter-spacing:3.5px;
+  text-decoration:none;
+  text-transform: uppercase;
+}
+
+.slider-item-slogan{
+  font-family:"Raleway", sans-serif;
+  font-weight:800;
+  font-size:50px;
+  line-height:50px;
+  color:#000000;
+}
+
+.slider-item-discription{
+  font-family:"Rubik", sans-serif;
+  font-weight:400;
+  color:#444444;
+}
+
+.slider-item-link{
+  line-height: 21.13px;
+  letter-spacing:3.5px;
+  text-align:center;
+  color:#000000;
+  text-decoration:none;
+  text-transform: uppercase;
+}
+
+.slider-product-table{
+  font-family:"Rubik";
+  font-weight:400;
+}
+
+.first-row{
+  font-size:36px;
+}
+
+.second-row{
+  font-size:16px;
+  color:#444444;
+}
+
+.category-list{
+  line-height:24px;
+  letter-spacing: -0.35px;
+}
+
+.category-link{
+  color: #000000;
+  text-decoration:none;
+  background-color:#FFE17F;
+}

@@ -3,54 +3,63 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-  <header class="main-page">
+  <header class="header-page">
     <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
     <a class="logo-main-link" href="index.html">
-      <img class="logo" src="/images/logo-device.svg" width="145" height="36" alt="Логотип сайта Девайс">
+      <img class="logo" src="./images/logo-device.svg" width="145" height="36" alt="Логотип сайта Девайс">
     </a>
-    <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-      <input class="header-search" type="text" name="search" placeholder="Текст поиска">
-      <button class="search-button" type="submit" value="Найти">Найти</button>
-    </form>
-    <nav class="navigation">
-      <ul class="navigation-user text-additional">
-        <li class="navigation-user-item">
-          <a class="navigation-user-link " href="#">Коля Петухов</a>
-        </li>
-        <li class="navigation-user-item">
-          <a class="navigation-user-link" href="#">Выйти</a>
-        </li>
-        <li class="navigation-user-item">
-          <a class="navigation-user-link" href="#">Сравнить</a>
-        </li>
-        <li class="navigation-user-item">
-          <a class="navigation-user-link" href="#">Корзина</a>
-        </li>
-      </ul>
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Доставка</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Гарантия</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <section class="product-catalog">Каталог товаров
-      <a class="product-catalog-link"></a>
-    </section>
+    <div class="header-container">
+      <div class="header-wrapper search-nav-wrapper">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <input class="header-search text-additional" type="text" name="search" placeholder="Текст поиска">
+          <button class="search-button text-additional" type="submit" value="Найти">Найти</button>
+        </form>
+        <nav class="navigation">
+          <ul class="navigation-user text-additional">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link " href="#">Коля Петухов</a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Выйти</a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-wrapper catalog-nav-wrapper">
+        <section class="product-catalog">Каталог товаров
+          <a class="product-catalog-link"></a>
+        </section>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
-  <main class="main-catalog">
+  <main class="main-container main-catalog">
     <header class="catalog-header">
+      <div class="catalog-header-container">
       <h1 class="catalog-header-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs text-additional">
         <li class="breadcrumbs-item">
@@ -63,15 +72,16 @@
           <a class="breadcrumbs-link">Моноподы для селфи</a>
         </li>
       </ul>
+    </div>
     </header>
     <div class="products-filtering-box">
       <section class="product-block">
-        <h2 class="title product-filter">фильтр:</h2>
+        <div class="filter-container">
         <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
+        <h2 class="title product-filter">фильтр:</h2>
           <fieldset class="range">
             <legend class="filter-range text-additional">Стоимость</legend>
           </fieldset>
-
           <fieldset class="checkbox">
             <legend class="filter-checkbox text-additional">Цвет</legend>
             <ul class="filter-checkbox-list text-additional">
@@ -124,8 +134,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="product-filter-button button-link" type="submit">Показать</button>
+          <button class="product-filter-button button-styles" type="submit">Показать</button>
         </form>
+      </div>
+        <div class="product-selection-container">
         <p class="title sorting-title">Сортировка:</p>
         <select class="sorting">
           <option class="sorting-option" value="popular">Популярные</option>
@@ -142,7 +154,7 @@
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="/images/products/monopods/product-1.jpg" width="360" height="380"
+                <img class="product-card-image" src="./images/products/monopods/product-1.jpg" width="360" height="380"
                   alt="">
                 <p class="product-card-title">Любительская селфи-палка</p>
               </a>
@@ -150,7 +162,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="images/products/monopods/product-2.jpg" width="360" height="380"
+                <img class="product-card-image" src="./images/products/monopods/product-2.jpg" width="360" height="380"
                   alt="">
                 <p class="product-card-title">Профессиональная селфи-палка </p>
               </a>
@@ -158,7 +170,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="images/products/monopods/product-3.jpg" width="360" height="380"
+                <img class="product-card-image" src="./images/products/monopods/product-3.jpg" width="360" height="380"
                   alt="">
                 <p class="product-card-title">Непотопляемая селфи-палка</p>
               </a>
@@ -166,7 +178,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="/images/products/monopods/product-4.jpg" width="360" height="380"
+                <img class="product-card-image" src="./images/products/monopods/product-4.jpg" width="360" height="380"
                   alt="">
                 <p class="product-card-title">Селфи-палка «Следуй за мной»</p>
               </a>
@@ -212,15 +224,20 @@
             </li>
           </ul>
         </div>
+      </div>
       </section>
     </div>
   </main>
   <footer class="footer-page">
+    <div class="footer-container">
+    <div class="logo-address-container">
     <a class="footer-logo-link">
-      <img class="footer-logo" src="/images/logo-device.svg" width="145" height="36"
+      <img class="footer-logo" src="./images/logo-device.svg" width="145" height="36"
         alt="Логотип интернет-магазина Девайс">
     </a>
     <p class="footer-address text-additional">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+  </div>
+  <div class="navigation-social-container">
     <section class="footer-navigation">
       <h2 class="visually-hidden">Навигация по сайту</h2>
       <ul class="footer-navigation-list">
@@ -240,29 +257,39 @@
       <ul class="social-network-list">
         <li class="social-network-item">
           <a class="social-network-link" href="https://t.me/htmlacademy">
-            <img class="social-network-image" src="/images/social-telegram.svg" width="40" height="40"
+            <img class="social-network-image" src="./images/social-telegram.svg" width="40" height="40"
               alt="Наш Телеграм">
           </a>
         </li>
         <li class="social-network-item">
           <a class="social-network-link" href="https://www.youtube.com/user/htmlacademyru">
-            <img class="social-network-image" src="/images/social-youtube.svg" width="40" height="40" alt="Наш Youtube">
+            <img class="social-network-image" src="./images/social-youtube.svg" width="40" height="40"
+              alt="Наш Youtube">
           </a>
         </li>
         <li class="social-network-item">
           <a class="social-network-link" href="https://twitter.com/htmlacademy_ru">
-            <img class="social-network-image" src="/images/social-twitter.svg" width="40" height="40" alt="Наш Твиттер">
+            <img class="social-network-image" src="./images/social-twitter.svg" width="40" height="40"
+              alt="Наш Твиттер">
           </a>
         </li>
       </ul>
     </section>
+  </div>
+  <div class="phone-logo-html-container">
     <section class="contacts-footer">
       <a class="contacts-footer-phone text-additional" href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a>
       <a class="html-link" href="https://htmlacademy.ru/">
-        <img class="html-image" src="/images/logo-html-acagemy.svg" width="115" height="33" alt="Наш разработчик">
+        <img class="html-image" src="./images/logo-html-acagemy.svg" width="115" height="33" alt="Наш разработчик">
       </a>
     </section>
+  </div>
+  </div>
   </footer>
 </body>
 
 </html>
+
+
+
+

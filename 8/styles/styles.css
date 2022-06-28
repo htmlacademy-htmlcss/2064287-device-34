@@ -1130,7 +1130,7 @@ body {
   padding-left: 27px;
   font-size: 18px;
   color: #444444;
-  background-image: url("../images/check-mark.svg");
+  background-image: url("../images/mark-check.svg");
   background-repeat: no-repeat;
   background-position: 0% 70%;
 }
@@ -1380,7 +1380,7 @@ body {
 .breadcrumbs-item {
   padding-right: 20px;
   margin-right: 16px;
-  background-image: url("../images/products/breadcrumbs.svg");
+  background-image: url("../images/products/breadcrumb.svg");
   background-repeat: no-repeat;
   background-position: right;
 }

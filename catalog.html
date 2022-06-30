@@ -22,8 +22,21 @@
       <div class="header-container">
         <div class="header-wrapper search-nav-wrapper">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <input class="loupe-search" type="image" src="./images/search.svg" alt="#">
-            <input class="header-search text-additional" type="text" name="search" placeholder="Текст поиска">
+            <label class="search">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#a)">
+                  <path
+                    d="m15.7 14.69-3.1-3.1c.9-1.2 1.4-2.6 1.4-4.2 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.39c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"
+                    fill="#000" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" transform="translate(0 .39)" d="M0 0h16v16H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <input class="header-search text-additional" type="text" name="search" placeholder="Текст поиска">
+            </label>
             <button class="search-button text-additional" type="submit" value="Найти">Найти</button>
           </form>
           <ul class="navigation-user text-additional">
@@ -71,7 +84,7 @@
                     fill="#000" />
                 </svg>
                 <span class="navigation-user-text">Корзина</span>
-                </a>
+              </a>
             </li>
           </ul>
         </div>
@@ -120,38 +133,70 @@
               <h2 class="title product-filter">фильтр:</h2>
               <fieldset class="range">
                 <legend class="filter-range text-additional">Стоимость</legend>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left:0; width:119px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
+
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      от <input class="range-input" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="catalog-filter-label">
+                      до <input class="range-input" type="number" value="5000" name="max-price">
+                    </label>
+                  </div>
+
+
+
+                </div>
               </fieldset>
               <fieldset class="checkbox">
                 <legend class="filter-checkbox text-additional">Цвет</legend>
                 <ul class="filter-checkbox-list text-additional">
                   <li class="filter-checkbox-item">
                     <label class="filter-checkbox-label">
-                      <input class="filter-checkbox-button" type="checkbox" name="black" value="black" checked>
-                      Черный
+                      <input class="visually-hidden filter-checkbox-button" type="checkbox" name="black" value="black"
+                        checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Черный</span>
                     </label>
                   </li>
                   <li class="filter-checkbox-item">
                     <label class="filter-checkbox-label">
-                      <input class="filter-checkbox-button" type="checkbox" name="white" value="white" checked>
-                      Белый
+                      <input class="visually-hidden filter-checkbox-button" type="checkbox" name="white" value="white"
+                        checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Белый</span>
                     </label>
                   </li>
                   <li class="filter-checkbox-item">
                     <label class="filter-checkbox-label">
-                      <input class="filter-checkbox-button" type="checkbox" name="blue" value="blue">
-                      Синий
+                      <input class="visually-hidden filter-checkbox-button" type="checkbox" name="blue" value="blue">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Синий</span>
                     </label>
                   </li>
                   <li class="filter-checkbox-item">
                     <label class="filter-checkbox-label">
-                      <input class="filter-checkbox-button" type="checkbox" name="red" value="red">
-                      Красный
+                      <input class="visually-hidden filter-checkbox-button" type="checkbox" name="red" value="red">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Красный</span>
                     </label>
                   </li>
                   <li class="filter-checkbox-item">
                     <label class="filter-checkbox-label">
-                      <input class="filter-checkbox-button" type="checkbox" name="pink" value="pink">
-                      Розовый
+                      <input class="visually-hidden filter-checkbox-button" type="checkbox" name="pink" value="pink">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Розовый</span>
                     </label>
                   </li>
                 </ul>
@@ -161,15 +206,17 @@
                 <ul class="filter-radiobutton-list text-additional">
                   <li class="filter-radiobutton-item">
                     <label class="filter-radiobutton-label">
-                      <input class="filter-radiobutton-button" type="radio" name="filter-radiobutton" value="yes"
+                      <input class="visually-hidden filter-radiobutton-button" type="radio" name="filter-radiobutton" value="yes"
                         checked>
-                      Есть
+                      <span class="radiobutton-mark"></span>
+                      <span class="control-label">Есть</span>
                     </label>
                   </li>
                   <li class="filter-radiobutton-item">
                     <label class="filter-radiobutton-label">
-                      <input class="filter-radiobutton-button" type="radio" name="filter-radiobutton" value="no">
-                      Нет
+                      <input class="visually-hidden filter-radiobutton-button" type="radio" name="filter-radiobutton" value="no">
+                      <span class="radiobutton-mark"></span>
+                      <span class="control-label">Нет</span>
                     </label>
                   </li>
                 </ul>
@@ -180,13 +227,14 @@
           <div class="product-selection-container">
             <div class="sorting-container">
               <p class="sorting-title">Сортировка:</p>
+
               <select class="sorting">
                 <option class="sorting-option" value="popular">Популярные</option>
                 <option class="sorting-option" value="popular">Дешевые</option>
                 <option class="sorting-option" value="popular">Дорогие</option>
               </select>
               <div class="sorting-button-container">
-                <a class="sorting-link">
+                <a class="sorting-link" href="#">
                   <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity=".2" clip-path="url(#a)">
                       <path d="m6 0 5.5 10H.5" fill="#000" />
@@ -199,7 +247,7 @@
                   </svg>
                   <span class="visually-hidden">В конец списка</span>
                 </a>
-                <a class="sorting-link">
+                <a class="sorting-link" href="#">
                   <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity=".2" clip-path="url(#a)">
                       <path d="M6 10 .5 0h11" fill="#000" />

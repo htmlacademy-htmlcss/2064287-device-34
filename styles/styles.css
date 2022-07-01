@@ -234,16 +234,25 @@ opacity: 1;
 }
 
 
+.popover-open{
+  display: none;
+  }
+
 /* STYLES FOR POPOVER */
 
 
 /* Class for opening popover, it is used for div with class="popover-wrapper" */
 
-.popover-open {
+ .navigation-user-item:focus-within > .popover-open{
   display: block;
 }
 
-.popover-wrapper {
+ .navigation-user-link:hover  .popover-open{
+  display: block;
+}
+
+
+ .decorative-element{
   position: absolute;
   z-index: 2;
   top: 30px;
@@ -253,13 +262,13 @@ opacity: 1;
   background-image: url("../images/popup.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  /* display: none; */
 }
 
-.popover {
+
+.popover-wrapper {
   display: flex;
-  flex-direction: column;
-  margin-top: 6px;
+  flex-direction:column;
+  margin-top:6px;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -268,6 +277,7 @@ opacity: 1;
   line-height: 20px;
   background-color: #000000;
 }
+
 
 .content-list {
   margin: 0;
@@ -342,12 +352,8 @@ opacity: 1;
 .amount-wrapper-inputs {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 13px 20px;
   background: #1A1A1A;
-}
-
-.basket-label {
-  padding: 15px 0;
 }
 
 .popover-input {
@@ -374,6 +380,7 @@ input[type=number] {
 }
 
 .basket-link {
+  display: block;
   padding: 14px 23px;
   margin: 20px;
   font-family: "Raleway", sans-serif;
@@ -476,8 +483,9 @@ input[type=number] {
 }
 
 .product-catalog-link {
+  position: relative;
+  z-index: 3;
   display: flex;
-  margin-right: auto;
   line-height: 21px;
   letter-spacing: 3.5px;
   text-transform: uppercase;
@@ -532,6 +540,79 @@ input[type=number] {
 .catalog-opener:hover::before {
   transform: rotate(90deg);
 }
+
+/* Styles for subcatalog */
+
+.subcatalog{
+  display: none;
+}
+
+.catalog-wrapper:focus-within > .subcatalog{
+  display: flex;
+}
+
+.catalog-wrapper{
+  position: relative;
+  margin-right: auto;
+}
+
+.subcatalog {
+  position: absolute;
+  z-index: 2;
+  left: -61px;
+  top: 35px;
+  margin: 0;
+  padding:33px 0 27px 60px;
+  width: 1160px;
+  min-height:180px;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  list-style-type: none;
+  background: #FFE17F;
+}
+
+.subcatalog-item{
+  display: flex;
+  flex-direction: column;
+  padding-right:60px;
+
+}
+
+.subcatalog-link{
+  display: block;
+  margin-bottom: 15px;
+  min-width:90px;
+  color: #000000;
+  text-decoration: none;
+  border-bottom:1px solid #000000;
+}
+
+.subcatalog-link:hover{
+opacity: 0.6;
+}
+
+.subcatalog-link:active{
+  opacity: 0.3;
+}
+
+.subcatalog-link:focus{
+  outline: 2px solid #AF4FFF;
+}
+
+.subcatalog-link .disabled{
+  border: none;
+}
+
+
+
+
+/* End of styles for subcatalog */
+
+
 
 .main-container {
   width: 100%;

@@ -76,7 +76,7 @@
                 <span class="navigation-user-text">Сравнить</span>
               </a>
             </li>
-            <li class="navigation-user-item">
+            <li class="navigation-user-item ">
               <a class="navigation-user-link text-additional" href="#">
                 <span class="navigation-user-amount-products text-additional">2</span>
                 <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,9 +86,12 @@
                 </svg>
                 <span class="navigation-user-text">Корзина</span>
               </a>
-              <div class="popover-wrapper popover-open">
-                <div class="popover popover-cart">
-                  <h2 class="visually-hidden">Корзина</h2>
+
+                <!-- Code for popover -->
+
+              <div class="popover-open decorative-element">
+                <div class="popover-wrapper">
+                  <h2 class="visually-hidden">Поповер Корзина</h2>
                   <ul class="content-list">
                     <li class="content-item">
                       <a class="content-item-link" href="#">
@@ -122,7 +125,6 @@
                         <span class="visually-hidden">Удалить товар</span>
                       </button>
                     </li>
-
                   </ul>
                   <div class="amount-wrapper-inputs">
                     <label class="basket-label items-amount-label">
@@ -134,16 +136,41 @@
                     </label>
                   </div>
                   <a class="basket-link" href="#">Открыть корзину</a>
-                </div>
               </div>
+            </div>
+
+             <!-- End of code for popover -->
+
             </li>
           </ul>
         </div>
-        <div class="header-wrapper catalog-nav-wrapper">
-          <a class="product-catalog-link" href="catalog.html">
-            <p class="product-catalog-text">Каталог товаров</p>
-            <div class="catalog-opener"></div>
-          </a>
+        <div class="header-wrapper">
+            <div class="catalog-wrapper">
+              <a class="product-catalog-link" href="catalog.html">
+                <p class="product-catalog-text">Каталог товаров</p>
+                <div class="catalog-opener"></div>
+
+                <!-- Code for subcatalog -->
+
+                <ul class="subcatalog">
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-link disabled" href="#">Виртуальная реальность</a>
+                    <a class="subcatalog-link disabled" href="#">Моноподы для cелфи</a>
+                    <a class="subcatalog-link disabled" href="#">Экшн-камеры</a>
+                    </li>
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-link disabled" href="#">Фитнес-браслеты</a>
+                    <a class="subcatalog-link disabled" href="#">Умные часы</a>
+                    </li>
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-link disabled" href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+
+                <!-- End of code for subcatalog -->
+
+              </a>
+            </div>
           <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-item">

@@ -234,25 +234,25 @@ opacity: 1;
 }
 
 
-.popover-open{
+.popover-open {
   display: none;
-  }
+}
 
 /* STYLES FOR POPOVER */
 
 
 /* Class for opening popover, it is used for div with class="popover-wrapper" */
 
- .navigation-user-item:focus-within > .popover-open{
+.navigation-user-item:focus-within > .popover-open {
   display: block;
 }
 
- .navigation-user-link:hover  .popover-open{
+.navigation-user-link:hover > .popover-open {
   display: block;
 }
 
 
- .decorative-element{
+.decorative-element {
   position: absolute;
   z-index: 2;
   top: 30px;
@@ -267,8 +267,8 @@ opacity: 1;
 
 .popover-wrapper {
   display: flex;
-  flex-direction:column;
-  margin-top:6px;
+  flex-direction: column;
+  margin-top: 6px;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -543,15 +543,15 @@ input[type=number] {
 
 /* Styles for subcatalog */
 
-.subcatalog{
+.subcatalog {
   display: none;
 }
 
-.catalog-wrapper:focus-within > .subcatalog{
+.catalog-wrapper:focus-within > .subcatalog {
   display: flex;
 }
 
-.catalog-wrapper{
+.catalog-wrapper {
   position: relative;
   margin-right: auto;
 }
@@ -562,9 +562,9 @@ input[type=number] {
   left: -61px;
   top: 35px;
   margin: 0;
-  padding:33px 0 27px 60px;
+  padding: 33px 0 27px 60px;
   width: 1160px;
-  min-height:180px;
+  min-height: 180px;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -575,35 +575,35 @@ input[type=number] {
   background: #FFE17F;
 }
 
-.subcatalog-item{
+.subcatalog-item {
   display: flex;
   flex-direction: column;
-  padding-right:60px;
+  padding-right: 60px;
 
 }
 
-.subcatalog-link{
+.subcatalog-link {
   display: block;
   margin-bottom: 15px;
-  min-width:90px;
+  min-width: 90px;
   color: #000000;
   text-decoration: none;
-  border-bottom:1px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 
-.subcatalog-link:hover{
-opacity: 0.6;
+.subcatalog-link:hover {
+  opacity: 0.6;
 }
 
-.subcatalog-link:active{
+.subcatalog-link:active {
   opacity: 0.3;
 }
 
-.subcatalog-link:focus{
+.subcatalog-link:focus {
   outline: 2px solid #AF4FFF;
 }
 
-.subcatalog-link .disabled{
+.subcatalog-link .disabled {
   border: none;
 }
 
@@ -1665,6 +1665,344 @@ opacity: 0.6;
 
 
 
+
+
+/* Styles for modal window start */
+
+
+
+.modal-container {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(240, 240, 240, 0.9);
+}
+
+/* .modal-container-close{
+  display: none;
+} */
+
+.modal {
+  position: absolute;
+}
+
+.modal-delivery {
+  display: flex;
+  flex-direction: column;
+  width: 920px;
+  padding: 62px 70px;
+  background: #FFFFFF;
+  border: 10px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.modul-header {
+  display: flex;
+  margin-bottom: 42px;
+}
+
+.modal-title {
+  padding: 0;
+  margin: 0;
+  margin-right: auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.modal-button-close {
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  border: none;
+  background: transparent;
+  background-image: url("../images/icon-cross.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.modal-button-close:hover {
+  opacity: 0.6;
+}
+
+.modal-button-close:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.modal-button-close:active {
+  opacity: 0.3;
+}
+
+.client-information {
+  display: flex;
+}
+
+.modal-label {
+  margin-bottom: 14px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.delivery-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  display: flex;
+  margin-bottom: 42px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-input {
+  padding: 0;
+  height: 60px;
+  border: none;
+}
+
+.modal-input:hover {
+  opacity: 0.6;
+}
+
+.modal-input:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.modal-input:active {
+  opacity: 0.3;
+}
+
+.client-name-input {
+  background: #F0F0F0 url("../images/avatar-modal.svg") no-repeat right 21px center;
+}
+
+.client-email-input {
+  border: 2px solid #FF3D3D;
+  background: #F0F0F0 url("../images/mail.svg") no-repeat right 21px center;
+}
+
+.product-name-input,
+.amount-product-input {
+  background: #F0F0F0;
+}
+
+.modal-warning {
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FF3D3D;
+}
+
+.modal-input[type=text],
+.modal-input[type=email] {
+  padding: 20px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.modal-input[type=text]::placeholder,
+.modal-input[type=email]::placeholder {
+  opacity: 0.3;
+}
+
+.client-name-paragraph {
+  display: block;
+  width: 360px;
+  margin-right: 40px;
+}
+
+.client-email-paragraph {
+  display: block;
+  width: 360px;
+}
+
+.product-paragraph {
+  width: 540px;
+  margin-right: 40px;
+}
+
+.amount-product-paragraph {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
+
+.amount-wrapper {
+  display: flex;
+  background-color: #F0F0F0;
+}
+
+.modal-button-input {
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  width: 58px;
+  height: 60px;
+  border: none;
+  background-color: #F0F0F0;
+}
+
+.button-less {
+  margin-right: 3px;
+}
+
+.modal-button-input:hover {
+  opacity: 0.6;
+}
+
+.modal-button-input:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.modal-button-input:active {
+  opacity: 0.3;
+}
+
+.amount-product-input {
+  margin-right: 3px;
+  width: 60px;
+  height: 60px;
+}
+
+
+/* Styles for tooltip start */
+
+.form-label {
+  display: flex;
+}
+
+.tooltip-button {
+  cursor: pointer;
+  border: none;
+  background-color: #FFE17F;
+  padding: 0;
+  margin: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip-button:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.tooltip-icon {
+  color: #242424;
+  display: block;
+}
+
+.tooltip-content {
+  position: absolute;
+  right: 35px;
+  bottom: 45px;
+  background-image: url("../images/popup.svg");
+  background-repeat: no-repeat;
+  background-position: top right 40px;
+  display: none;
+}
+
+.tooltip-button:hover + .tooltip-content,
+.tooltip-button:focus + .tooltip-content {
+  display: block;
+}
+
+.tooltip-text {
+  display: block;
+  width: 200px;
+  padding: 19px 17px;
+  margin-top: 6px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #000000;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+
+
+
+/* Styles for tooltip end */
+
+
+
+.amount-product-input[type="number"] {
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.client-email-input {
+  display: block;
+  height: 60px;
+}
+
+.modal-input::-webkit-outer-spin-button,
+.modal-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.field-group input,
+.field-group label
+
+/* .field-group button  */
+  {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.modul-button-submit {
+  width: fit-content;
+  padding: 10px 30px;
+  background: linear-gradient(to bottom, #FFFFFF 40%, #FFE17F 40% 60%, #FFFFFF 60%);
+}
+
+
+/* Styles for modal window end */
+
+
+
+
+
+
 /* CATALOG.HTML */
 
 
@@ -2006,7 +2344,6 @@ opacity: 0.6;
 
 .filter-radiobutton-button[type=radio]:checked + .radiobutton-mark {
   border: 2px solid #000000;
-
   background-image: url("../images/button-mark.svg");
   background-position: center;
   background-repeat: no-repeat;

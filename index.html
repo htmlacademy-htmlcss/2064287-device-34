@@ -87,7 +87,7 @@
                 <span class="navigation-user-text">Корзина</span>
               </a>
 
-                <!-- Code for popover -->
+              <!-- Code for popover -->
 
               <div class="popover-open decorative-element">
                 <div class="popover-wrapper">
@@ -136,41 +136,43 @@
                     </label>
                   </div>
                   <a class="basket-link" href="#">Открыть корзину</a>
+                </div>
               </div>
-            </div>
 
-             <!-- End of code for popover -->
+              <!-- End of code for popover -->
 
             </li>
           </ul>
         </div>
         <div class="header-wrapper">
-            <div class="catalog-wrapper">
-              <a class="product-catalog-link" href="catalog.html">
-                <p class="product-catalog-text">Каталог товаров</p>
-                <div class="catalog-opener"></div>
+          <div class="catalog-wrapper">
+            <a class="product-catalog-link" href="catalog.html">
+              <p class="product-catalog-text">Каталог товаров</p>
 
-                <!-- Code for subcatalog -->
+              <div class="catalog-opener"></div>
+            </a>
 
-                <ul class="subcatalog">
-                  <li class="subcatalog-item">
-                    <a class="subcatalog-link disabled" href="#">Виртуальная реальность</a>
-                    <a class="subcatalog-link disabled" href="#">Моноподы для cелфи</a>
-                    <a class="subcatalog-link disabled" href="#">Экшн-камеры</a>
-                    </li>
-                  <li class="subcatalog-item">
-                    <a class="subcatalog-link disabled" href="#">Фитнес-браслеты</a>
-                    <a class="subcatalog-link disabled" href="#">Умные часы</a>
-                    </li>
-                  <li class="subcatalog-item">
-                    <a class="subcatalog-link disabled" href="#">Квадрокоптеры</a>
-                  </li>
-                </ul>
+            <!-- Code for subcatalog -->
 
-                <!-- End of code for subcatalog -->
+            <ul class="subcatalog">
+              <li class="subcatalog-item">
+                <a class="subcatalog-link disabled" href="#">Виртуальная реальность</a>
+                <a class="subcatalog-link disabled" href="#">Моноподы для cелфи</a>
+                <a class="subcatalog-link disabled" href="#">Экшн-камеры</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link disabled" href="#">Фитнес-браслеты</a>
+                <a class="subcatalog-link disabled" href="#">Умные часы</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link disabled" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
 
-              </a>
-            </div>
+            <!-- End of code for subcatalog -->
+
+
+          </div>
           <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-item">
@@ -479,6 +481,99 @@
         </a>
       </div>
     </footer>
+
+    <!-- Modal window  start-->
+
+
+    <!-- <div class="modal-container modal-container-close">
+            <div class="modal modal-delivery">
+
+              <div class="modul-header">
+                <h2 class="modal-title">Доставка под заказ</h2>
+                <button class="modal-button-close">
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+              </div>
+
+              <form class="delivery-form" method="post" action="https://echo.htmlacademy.ru/">
+
+                <div class="line first-line">
+                <div class="field-group client-name-paragraph">
+                  <label class="modal-label client-name-label" for="client-name">Ваше имя:</label>
+                  <input class="modal-input client-name-input" type="text" id="client-name" name="client-name-input"
+                    placeholder="Введите имя">
+                </div>
+
+
+                <div class="field-group client-email-paragraph">
+                  <label class="modal-label client-email-label" for="client-email">Ваш e-mail:</label>
+                  <input class="modal-input client-email-input" type="email" id="client-email" name="client-email-input"
+                    placeholder="Email" value="почта">
+                    <span class="modal-warning">Забавный у вас адрес</span>
+                </div>
+              </div>
+
+              <div class="line second-line">
+
+                <div class="field-group product-paragraph">
+                  <label class="modal-label product-name-label" for="product-name">Что нужно привезти:</label>
+                  <input class="modal-input product-name-input" type="text" id="product-name" name="product-name-input"
+                    placeholder="В свободной форме">
+                </div>
+
+
+                <div class="field-group amount-product-paragraph">
+                  <span class="form-label">
+                  <label class="modal-label amount-product-label" for="amount-product-input">Количество:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-button" type="button" aria-labelledby="tooltip-label">
+                      <svg class="tooltip-icon" width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 0H1v2h2V0ZM3 4H1v8h2V4Z" fill="#000" />
+                      </svg>
+                    </button>
+                    <div class="tooltip-content">
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                      к провозу багажа.</span>
+                    </div>
+                  </span>
+                  </span>
+                <div class="amount-wrapper">
+                <button class="modal-button-input button-less">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H0v2h16V7Z" fill="#000" />
+                  </svg>
+                  <span class="visually-hidden">Уменьшить количество</span>
+                </button>
+                <input class="modal-input amount-product-input" type="number" id="amount-product-input" name="amount-product-input"
+                  value="1">
+                <button class="modal-button-input button-more">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" fill="#000" />
+                  </svg>
+                  <span class="visually-hidden">Увеличить количество</span>
+                </button>
+              </div>
+            </div>
+
+
+              </div>
+
+
+                <button class="modul-button-submit button-styles" type="submit">Отправить
+                </button>
+
+
+              </form>
+
+
+            </div>
+          </div>
+ -->
+
+    <!-- Modal window end -->
+
+
+
   </body>
 
 </html>

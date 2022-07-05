@@ -91,7 +91,6 @@ body {
 
 .search-nav-wrapper {
   margin-bottom: 28px;
-  height: 40px;
 }
 
 .search-form {
@@ -759,6 +758,7 @@ input [type="number"] {
 
 .slider-pagination-button-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -806,7 +806,7 @@ input [type="number"] {
 }
 
 .link-styles {
-  padding: 10px 5px;
+  padding: 10px 36px;
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -821,16 +821,16 @@ input [type="number"] {
 .slider-item-link {
   position: relative;
   z-index: 1;
-  margin-left: 35px;
+  margin-left: 3px;
 }
 
 .slider-item-link::before {
   position: absolute;
   z-index: -1;
   content: "";
-  left: -23%;
+  left: 0;
   top: 39%;
-  width: 220px;
+  width: 100%;
   height: 18%;
   background-color: rgb(255, 225, 127);
 }
@@ -1040,7 +1040,7 @@ input [type="number"] {
   padding: 72px 63px 72px 116px;
   background-image: url("../images/advantages-delivery.svg");
   background-repeat: no-repeat;
-  background-position: 91% 34%;
+  background-position: 91% 50%;
 }
 
 .advantages-discription-second {
@@ -1199,7 +1199,7 @@ input [type="number"] {
 
 .about-us-list {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   padding: 0;
   list-style-type: none;
   font-weight: 700;
@@ -1246,8 +1246,8 @@ input [type="number"] {
 .about-us-link {
   position: relative;
   z-index: 1;
-  margin-left: 14px;
-  padding: 10px;
+  display: inline-flex;
+  padding: 10px 23px;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -1261,10 +1261,10 @@ input [type="number"] {
   position: absolute;
   content: "";
   z-index: -1;
-  width: 270px;
+  width: 100%;
   height: 18%;
   top: 39%;
-  left: -6%;
+  left: 0;
   background: rgb(255, 225, 127);
 }
 
@@ -1373,8 +1373,8 @@ input [type="number"] {
 .contacts-link {
   position: relative;
   z-index: 1;
-  margin-left: 29px;
-  width: fit-content;
+  display: inline-flex;
+  margin-left: -2px;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-align: center;
@@ -1387,10 +1387,10 @@ input [type="number"] {
   position: absolute;
   content: "";
   z-index: -1;
-  width: 259px;
-  height: 8px;
-  top: 38%;
-  left: -14%;
+  width: 100%;
+  height: 18%;
+  top: 40%;
+  left: 0;
   background: rgb(255, 225, 127);
 }
 
@@ -1428,7 +1428,7 @@ input [type="number"] {
   flex-direction: column;
   width: 1160px;
   margin: 0 auto;
-  padding: 60px 140px;
+  padding: 59px 140px;
 }
 
 .subscription-text {
@@ -1794,7 +1794,7 @@ input [type="number"] {
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-.modul-header {
+.modal-header {
   display: flex;
   margin-bottom: 42px;
 }
@@ -1803,6 +1803,8 @@ input [type="number"] {
   padding: 0;
   margin: 0;
   margin-right: auto;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -1813,6 +1815,7 @@ input [type="number"] {
   cursor: pointer;
   display: block;
   padding: 0;
+  margin-top: 11px;
   width: 26px;
   height: 26px;
   border: none;
@@ -1890,6 +1893,10 @@ input [type="number"] {
   display: block;
   width: 100%;
   box-sizing: border-box;
+}
+
+.client-email-label {
+  display: block;
 }
 
 .client-email-input {
@@ -2167,7 +2174,7 @@ input [type="number"] {
 }
 
 .filter {
-  margin-top: 25px;
+  margin-top: 24px;
   padding: 0 58px;
 }
 
@@ -2194,7 +2201,7 @@ input [type="number"] {
   width: 200px;
   height: 2px;
   background: rgb(0, 0, 0);
-  top: -16px;
+  top: -15px;
 }
 
 .range-scale {
@@ -2293,7 +2300,7 @@ input [type="number"] {
 .checkbox {
   padding: 0;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   border: none;
 }
 
@@ -2324,7 +2331,7 @@ input [type="number"] {
 }
 
 .filter-checkbox-item {
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 
 .filter-checkbox-label {
@@ -2379,7 +2386,7 @@ input [type="number"] {
 .radiobutton {
   padding: 0;
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 18px;
   border: none;
 }
 
@@ -2410,7 +2417,7 @@ input [type="number"] {
 }
 
 .filter-radiobutton-item {
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 
 .filter-radiobutton-label {
@@ -2458,6 +2465,7 @@ input [type="number"] {
 
 .product-filter-button {
   width: 220px;
+  margin-left:2px;
 }
 
 .product-selection-container {
@@ -2584,7 +2592,8 @@ input [type="number"] {
 
 .product-card-more-link {
   position: relative;
-  padding: 10px 5px;
+  display: inline-flex;
+  padding: 10px 37px;
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -2600,10 +2609,10 @@ input [type="number"] {
   position: absolute;
   z-index: -1;
   content: "";
-  left: -20%;
+  left: 0%;
   top: 40%;
-  width: 220px;
-  height: 8px;
+  width: 100%;
+  height: 18%;
   background-color: rgb(255, 225, 127);
 }
 
@@ -2618,7 +2627,7 @@ input [type="number"] {
 
 .product-card-more-link:hover::before {
   top: 0%;
-  height: 40px;
+  height: 100%;
   background-color: rgb(255, 225, 127);
 }
 
@@ -2628,7 +2637,7 @@ input [type="number"] {
 
 .product-card:active .product-card-more-link::before {
   top: 0%;
-  height: 40px;
+  height: 100%;
   background-color: rgb(255, 199, 0);
 }
 

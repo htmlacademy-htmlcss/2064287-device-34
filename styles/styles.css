@@ -30,8 +30,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-  min-width: 1440px;
+  justify-content: center;
+  margin: auto;
+  min-width: 1160px;
   min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -42,11 +43,14 @@ body {
 }
 
 .visually-hidden {
-  clip: rect(0 0 0 0);
-  height: 1px;
   position: absolute;
-  white-space: nowrap;
   width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .logo-main-link {
@@ -72,8 +76,7 @@ body {
 }
 
 .header-page {
-  width: 1160px;
-  margin: 40px 140px 0;
+  margin-top: 40px;
   background-color: rgb(255, 225, 127);
 }
 
@@ -101,7 +104,7 @@ body {
 }
 
 .search {
-  width: 355px;
+  width: 352px;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -207,7 +210,7 @@ body {
 .navigation-user-link {
   position: relative;
   display: flex;
-  padding-left: 7px;
+  padding-left: 17px;
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
@@ -415,7 +418,11 @@ input [type="number"] {
 
 
 .navigation-user-text {
-  padding-left: 12px;
+  padding-left: 15px;
+}
+
+.navigation-user-link .navigation-user-text:first-of-type{
+  margin-left: -6px;
 }
 
 .navigation-user-amount-products {
@@ -454,9 +461,10 @@ input [type="number"] {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   min-width: 470px;
   margin: 0;
+  margin-right: -47px;
   padding: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -466,6 +474,7 @@ input [type="number"] {
 }
 
 .navigation-link {
+  margin-right: 45px;
   color: rgb(0, 0, 0);
   line-height: 21px;
   text-decoration: none;
@@ -514,7 +523,7 @@ input [type="number"] {
 
 .catalog-opener {
   position: relative;
-  margin-top: -7px;
+  left: -1%;
   width: 48px;
   height: 48px;
   border: 2px solid rgb(0, 0, 0);
@@ -631,7 +640,7 @@ input [type="number"] {
 .popular-product-slider {
   position: relative;
   width: 1160px;
-  margin: 0 140px 70px 140px;
+  margin-bottom: 70px;
   background: linear-gradient(to bottom, rgb(255, 225, 127) 22%, rgb(255, 255, 255) 22% 78%);
 }
 
@@ -895,7 +904,8 @@ input [type="number"] {
   justify-content: space-between;
   min-width: 1160px;
   padding: 0;
-  margin: 0 140px 70px 140px;
+  margin: 0;
+  margin-bottom: 70px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 24px;
@@ -947,7 +957,7 @@ input [type="number"] {
 .advantages {
   display: flex;
   justify-content: center;
-  margin: 0 140px;
+  margin: 0;
   padding-bottom: 72px;
 }
 
@@ -1092,7 +1102,7 @@ input [type="number"] {
 .rare-delivery {
   display: block;
   width: 1160px;
-  margin: 0 140px 70px 140px;
+  margin: 0 auto 70px;
   padding: 0;
 }
 
@@ -1157,7 +1167,7 @@ input [type="number"] {
   display: flex;
   justify-content: space-between;
   width: 1160px;
-  margin: 44px 140px 74px 140px;
+  margin: 44px auto 74px;
 }
 
 .about-us {
@@ -1443,8 +1453,7 @@ input [type="number"] {
   display: flex;
   flex-direction: column;
   width: 1160px;
-  margin: 0 auto;
-  padding: 57px 140px;
+  margin: 57px 0;
 }
 
 .subscription-text {
@@ -1587,12 +1596,22 @@ input [type="number"] {
 }
 
 .footer-container {
+  position: relative;
   display: grid;
   grid-template-columns: 239px auto 175px;
   grid-template-rows: 36px min-content 40px;
   width: 1160px;
-  margin: 0 auto;
-  padding: 62px 140px;
+  margin: 62px auto;
+}
+
+.footer-container::before{
+  position: absolute;
+  content: "";
+  bottom: 6%;
+  left: 0;
+  width: 80px;
+  height: 7px;
+  background-color: rgb(255, 199, 0);
 }
 
 .footer-logo-link {
@@ -1614,15 +1633,6 @@ input [type="number"] {
   color: rgb(255, 255, 255);
 }
 
-.decoration-footer {
-  grid-row: 3/4;
-  grid-column: 1/2;
-  width: 80px;
-  height: 7px;
-  margin-top: 20px;
-  background-color: rgb(255, 199, 0);
-}
-
 .footer-navigation {
   grid-column: 2/3;
   grid-row: 2/3;
@@ -1637,12 +1647,13 @@ input [type="number"] {
   flex-wrap: wrap;
   width: 600px;
   margin: 33px 0;
+  margin-left: 5px;
   padding: 0;
   list-style-type: none;
 }
 
 .footer-navigation-item {
-  margin-right: 35px;
+  margin-right: 33px;
 }
 
 .footer-navigation-item:nth-child(3n) {
@@ -1679,8 +1690,8 @@ input [type="number"] {
   grid-row: 3/4;
   align-self: center;
   justify-self: center;
-  margin-left: -69px;
-  margin-bottom: -4px;
+  margin-left: -65px;
+  margin-bottom: -10px;
 }
 
 .social-network-list {
@@ -1733,6 +1744,7 @@ input [type="number"] {
   grid-column: 3/4;
   grid-row: 2/3;
   margin-top: -18px;
+  margin-left: -2px;
   font-size: 16px;
   line-height: 20px;
   color: rgb(255, 255, 255);
@@ -1755,7 +1767,7 @@ input [type="number"] {
 .html-link {
   grid-column: 3/4;
   grid-row: 3/4;
-  margin-top: 5px;
+  margin-top: 8px;
   justify-self: end;
 }
 
@@ -2108,8 +2120,10 @@ input [type="number"] {
 
 
 .catalog-header-container {
-  width: 1079px;
-  margin: 40px 161px 35px 200px;
+  width: 1160px;
+  margin: 40px auto 35px;
+  padding-left: 63px;
+  box-sizing: border-box;
 }
 
 .catalog-header-title {
@@ -2176,7 +2190,7 @@ input [type="number"] {
 .product-block {
   display: flex;
   width: 1160px;
-  margin: 0 140px;
+  margin: 0 auto;
 }
 
 .product-filter {

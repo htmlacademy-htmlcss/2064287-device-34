@@ -852,7 +852,7 @@ input [type="number"] {
 }
 
 .slider-item-link:hover::before {
-  top: 0%;
+  top: 0;
   height: 100%;
 }
 
@@ -861,7 +861,7 @@ input [type="number"] {
 }
 
 .slider-item-link:focus::before {
-  left: -27%;
+  left: 0;
   top: 0;
   width: 220px;
   height: 100%;
@@ -1421,8 +1421,8 @@ input [type="number"] {
 
 .contacts-link:focus::before {
   top: 0%;
-  height: 40px;
-  background-color: rgb(255, 255, 255);
+  height: 18%;
+  background: linear-gradient(to bottom, transparent 40%, rgb(255, 225, 127) 40% 60%, transparent 60%);
   outline: 2px solid rgb(175, 79, 255);
 }
 
@@ -1711,6 +1711,10 @@ input [type="number"] {
 
 .social-network-link:hover {
   background: rgb(255, 199, 0);
+}
+
+.social-network-link:focus{
+  outline: none;
 }
 
 .social-network-item:focus-within {

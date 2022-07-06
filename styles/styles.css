@@ -339,17 +339,25 @@ body {
   opacity: 0.3;
 }
 
+.items-amount-label{
+  margin-right: 58px;
+}
+
 .amount-wrapper-inputs {
   display: flex;
-  justify-content: space-between;
   padding: 13px 20px;
+  margin-left: 3px;
   background: rgb(26, 26, 26);
+}
+.sum-input{
+  margin-left: 4px;
 }
 
 .popover-input {
   width: 40px;
+  padding: 0;
+  font-size: 16px;
   color: rgb(255, 255, 255);
-  text-align: center;
   background-color: transparent;
   border: none;
   appearance: textfield;
@@ -374,6 +382,7 @@ input [type="number"] {
   padding: 14px 23px;
   margin: 20px;
   font-family: "Raleway", sans-serif;
+  font-size: 18px;
   font-weight: 800;
   line-height: 21px;
   align-items: center;
@@ -576,12 +585,16 @@ input [type="number"] {
 .subcatalog-item {
   display: flex;
   flex-direction: column;
-  padding-right: 60px;
+  margin-right: 60px;
+}
+
+.subcatalog-item:nth-child(2){
+  margin-right: 70px;
 }
 
 .subcatalog-link {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   min-width: 90px;
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -599,7 +612,7 @@ input [type="number"] {
   outline: 2px solid rgb(175, 79, 255);
 }
 
-.subcatalog-link .disabled {
+.subcatalog-link .subcatalog-link-disabled {
   border: none;
 }
 
